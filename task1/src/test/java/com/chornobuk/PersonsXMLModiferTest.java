@@ -1,6 +1,5 @@
 package com.chornobuk;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -16,7 +15,7 @@ public class PersonsXMLModiferTest {
     public void joinNamesAndSurnamesSamePathes() {
         String inputFilePath = "/src/main/test/resources/case1/input.xml";
         String outputFilePath = "/src/main/test/resources/case1/input.xml";
-        PersonsXMLModifer xmlModifer = new PersonsXMLModifer();
+        XMLPersonsModifier xmlModifer = new XMLPersonsModifier();
         assertThrows(IllegalArgumentException.class,
                 () -> xmlModifer.joinNamesAndSurnames(inputFilePath, outputFilePath));
     }
@@ -28,7 +27,7 @@ public class PersonsXMLModiferTest {
         String correctFilePath = "src/test/resources/case1/correct.xml";
 
         // create new file with joined names and surnam
-        PersonsXMLModifer xmlModifer = new PersonsXMLModifer();
+        XMLPersonsModifier xmlModifer = new XMLPersonsModifier();
         xmlModifer.joinNamesAndSurnames(inputFilePath, outputFilePath);
         assertTrue(compareFiles(correctFilePath, outputFilePath));
     }
@@ -39,7 +38,7 @@ public class PersonsXMLModiferTest {
         String outputFilePath = "src/test/resources/case2/output.xml";
         String correctFilePath = "src/test/resources/case2/correct.xml";
         // create new file with joined names and surnam
-        PersonsXMLModifer xmlModifer = new PersonsXMLModifer();
+        XMLPersonsModifier xmlModifer = new XMLPersonsModifier();
         xmlModifer.joinNamesAndSurnames(inputFilePath, outputFilePath);
         assertTrue(compareFiles(correctFilePath, outputFilePath));
     }
@@ -50,7 +49,7 @@ public class PersonsXMLModiferTest {
         String outputFilePath = "src/test/resources/case3/output.xml";
         String correctFilePath = "src/test/resources/case3/correct.xml";
         // create new file with joined names and surnam
-        PersonsXMLModifer xmlModifer = new PersonsXMLModifer();
+        XMLPersonsModifier xmlModifer = new XMLPersonsModifier();
         xmlModifer.joinNamesAndSurnames(inputFilePath, outputFilePath);
         assertTrue(compareFiles(correctFilePath, outputFilePath));
     }

@@ -16,7 +16,7 @@ public class PersonXmlModifierTest {
         String result = """
             <person name="Іван Котляревський"  birthDate="09.09.1769" />
                 """;
-        assertEquals(result, PersonXMLModifier.joinNameAndSurname(xml));
+        assertEquals(result, XMLPersonModifier.joinNameAndSurname(xml));
     }
 
     @Test
@@ -33,7 +33,7 @@ public class PersonXmlModifierTest {
             
             birthDate="09.09.1769" />
                 """;
-        assertEquals(result, PersonXMLModifier.joinNameAndSurname(xml));
+        assertEquals(result, XMLPersonModifier.joinNameAndSurname(xml));
     }
 
     @Test
@@ -64,7 +64,7 @@ public class PersonXmlModifierTest {
             
             birthDate="09.09.1769" />
                 """;
-        assertEquals(result, PersonXMLModifier.joinNameAndSurname(xml));
+        assertEquals(result, XMLPersonModifier.joinNameAndSurname(xml));
     }
     @Test
     public void joinNameAndSurnameDifferentFormatting3() throws IOException{
@@ -82,7 +82,7 @@ public class PersonXmlModifierTest {
                  
                 />
                 """;
-        assertEquals(result, PersonXMLModifier.joinNameAndSurname(xml));
+        assertEquals(result, XMLPersonModifier.joinNameAndSurname(xml));
     }
 
 
@@ -100,7 +100,7 @@ public class PersonXmlModifierTest {
             
             birthDate="09.09.1769" />
                 """;
-        assertEquals(result, PersonXMLModifier.joinNameAndSurname(xml));
+        assertEquals(result, XMLPersonModifier.joinNameAndSurname(xml));
     }
 
     @Test
@@ -117,6 +117,6 @@ public class PersonXmlModifierTest {
             
             birthDate="09.09.1769" />
                 """;
-        assertEquals(result, PersonXMLModifier.joinNameAndSurname(xml));
+        assertEquals(result, XMLPersonModifier.joinNameAndSurname(xml));
     }
 }

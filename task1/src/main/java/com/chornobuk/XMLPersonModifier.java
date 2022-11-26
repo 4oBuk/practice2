@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PersonXMLModifier {
+public class XMLPersonModifier {
     private static final String NAME_REGEX = "\\bname\\s*=\\s*\"[^\"]*\"";
     private static final String SURNAME_REGEX = "surname\\s*=\\s*\"[^\"]*\"";
 

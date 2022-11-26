@@ -5,7 +5,8 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-public class PersonsXMLModifer {
+
+public class XMLPersonsModifier {
     public void joinNamesAndSurnames(String inputFilePath, String outputFilePath) throws IOException {
         if (inputFilePath.equals(outputFilePath)) {
             throw new IllegalArgumentException("input and output pathes cannot be the same");
@@ -20,13 +21,14 @@ public class PersonsXMLModifer {
                     writer.write(System.getProperty("line.separator"));
                 } else if(line.contains("</persons>")) {
                     writer.write(line);
-                
                 } else if (line.contains("/>")) {
                     stringBuilder.append(line);
                     stringBuilder.append(System.getProperty("line.separator"));
-                    String person = stringBuilder.toString();
-                    String result = PersonXMLModifier.joinNameAndSurname(person);
+                    
+                    String xmlPerson = stringBuilder.toString();
+                    String result = XMLPersonModifier.joinNameAndSurname(xmlPerson);
                     stringBuilder.setLength(0);// clear string builder after writing
+                    
                     writer.write(result);
                     writer.flush();
                 } else {

@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-
 public class PersonsXMLModifer {
     public void joinNamesAndSurnames(String inputFilePath, String outputFilePath) throws IOException {
         if (inputFilePath.equals(outputFilePath)) {
@@ -16,7 +15,6 @@ public class PersonsXMLModifer {
             String line;
             StringBuilder stringBuilder = new StringBuilder();
             while ((line = reader.readLine()) != null) {
-                System.out.println(line);// todo:remove
                 if (line.contains("<persons>")) {
                     writer.write(line);
                     writer.write(System.getProperty("line.separator"));

@@ -1,1 +1,5 @@
 com/chornobuk/AppTest.class
+com/chornobuk/parsers/FinesXMLParserTest.class
+com/chornobuk/StatisticFactoryTest.class
+com/chornobuk/parsers/FinesFolderParserTest.class
+com/chornobuk/parsers/FineXMLParserTest.class

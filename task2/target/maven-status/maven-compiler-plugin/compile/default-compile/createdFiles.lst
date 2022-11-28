@@ -1,1 +1,10 @@
+com/chornobuk/StatisticSerializer.class
+com/chornobuk/entities/FineType.class
+com/chornobuk/StatisticManager.class
+com/chornobuk/StatisticFactory.class
+com/chornobuk/parsers/FineXMLParser.class
+com/chornobuk/parsers/FinesFolderParser.class
 com/chornobuk/App.class
+com/chornobuk/parsers/FinesXMLParser.class
+com/chornobuk/entities/Statistic.class
+com/chornobuk/entities/Fine.class

@@ -3,6 +3,7 @@ package com.chornobuk.entities;
 import java.math.BigDecimal;
 import java.time.Year;
 import java.util.Map;
+import java.util.Objects;
 
 public class Statistic {
     private Year year;
@@ -32,4 +33,15 @@ public class Statistic {
         this.totalAmountPerType = totalAmountPerType;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Statistic statistic)) return false;
+        return year.equals(statistic.year) && totalAmountPerType.equals(statistic.totalAmountPerType);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(year, totalAmountPerType);
+    }
 }

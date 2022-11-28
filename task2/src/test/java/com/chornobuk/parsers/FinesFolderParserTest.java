@@ -19,7 +19,7 @@ public class FinesFolderParserTest {
         Map.Entry<String, List<Fine>> drunk = TestFinesData.getDrunkFines();
         fileFinesMap.put(fines.getKey(), fines.getValue());
         fileFinesMap.put(drunk.getKey(), drunk.getValue());
-        final String path = "src/test/resources";
+        final String path = "src/test/resources/type";
         FinesFolderParser finesFolderParser = new FinesFolderParser();
         assertEquals(fileFinesMap, finesFolderParser.readFinesFromFolder(path));
     }

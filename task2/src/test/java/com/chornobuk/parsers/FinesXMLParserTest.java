@@ -3,16 +3,12 @@ package com.chornobuk.parsers;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.File;
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 import org.junit.jupiter.api.Test;
 
 import com.chornobuk.entities.Fine;
-import com.chornobuk.entities.FineType;
 import com.chornobuk.testdata.TestFinesData;
 
 public class FinesXMLParserTest {

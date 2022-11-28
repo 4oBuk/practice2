@@ -11,8 +11,7 @@ import java.util.Map;
 import com.chornobuk.entities.Fine;
 
 public class FinesXMLParser {
-    public Map.Entry<String, List<Fine>> parseFines(String path) {
-        File file = new File(path);
+    public Map.Entry<String, List<Fine>> parseFromFile(File file) {
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             StringBuilder stringBuilder = new StringBuilder();

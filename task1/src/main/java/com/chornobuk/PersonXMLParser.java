@@ -6,6 +6,7 @@ import com.chornobuk.entities.Person;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 public class PersonXMLParser {
+    // todo write as a non static method
     public static String getPersonNameAndSurname(String XMLPerson) throws IOException {
         XmlMapper xmlMapper = new XmlMapper();
         Person person = xmlMapper.readValue(XMLPerson, Person.class);

@@ -11,8 +11,8 @@ public class App
         System.out.println( "Hello World!" );
     }
     // todo:
-    // []1. create class for rule break
-    // []2. create class for statistic
+    // [x]1. create class for fine
+    // [x]2. create class for statistic
     // []3. write parser to read one rule's break in XML (can rewrite method from taks 1)
     // []4. test it
     // []5. write general method that will parse one file and return map.entry

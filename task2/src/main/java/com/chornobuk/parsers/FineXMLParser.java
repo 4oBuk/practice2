@@ -1,4 +1,4 @@
-package com.chornobuk;
+package com.chornobuk.parsers;
 
 import java.io.IOException;
 

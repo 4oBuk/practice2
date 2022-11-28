@@ -13,10 +13,10 @@ public class App
     // todo:
     // [x]1. create class for fine
     // [x]2. create class for statistic
-    // []3. write parser to read one rule's break in XML (can rewrite method from taks 1)
-    // []4. test it
-    // []5. write general method that will parse one file and return map.entry
-    //      name-data using method from step 1
+    // [x]3. write parser to read one rule's break in XML (can rewrite method from taks 1)
+    // [x]4. test it
+    // [x]5. write general method that will parse one file and return map.entry
+    //      name-data using method from step 3
     // []6. method for reading all files from folder and retur map of results
     // []7. create method for generating statistic object 
     // for every year

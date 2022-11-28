@@ -1,4 +1,4 @@
-package com.chornobuk;
+package com.chornobuk.parsers;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -10,7 +10,6 @@ import org.junit.jupiter.api.Test;
 
 import com.chornobuk.entities.Fine;
 import com.chornobuk.entities.FineType;
-
 public class FineXMLParserTest {
 
     @Test

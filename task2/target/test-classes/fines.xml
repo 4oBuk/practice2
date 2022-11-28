@@ -1,0 +1,4 @@
+<fines>
+    <fine date_time= "2020-05-05 15:39:03" first_name="Ivan" last_name="Ivanov" type="SPEEDING" fine_amount="340.0" />
+    <fine date_time= "2020-12-31 18:00:17" first_name="Fred" last_name="Alfred" type="PARKING" fine_amount="500.50" />
+</fines>

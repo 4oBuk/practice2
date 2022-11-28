@@ -8,8 +8,8 @@ import java.util.Map;
 
 import org.junit.jupiter.api.Test;
 
-import com.chornobuk.TestFinesData;
 import com.chornobuk.entities.Fine;
+import com.chornobuk.testdata.TestFinesData;
 
 public class FinesFolderParserTest {
     @Test

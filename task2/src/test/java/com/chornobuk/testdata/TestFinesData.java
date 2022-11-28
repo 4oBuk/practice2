@@ -1,4 +1,4 @@
-package com.chornobuk;
+package com.chornobuk.testdata;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

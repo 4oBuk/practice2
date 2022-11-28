@@ -30,7 +30,7 @@ public class StatisticFactory {
                                 (e1, e2) -> e1.add(e2),
                                 LinkedHashMap::new));
 
-        Year year = Year.of(fines.get(0).getDateTime().getYear());
+        int year = fines.get(0).getDateTime().getYear();
         return new Statistic(year, descendingSortedMap);
     }
 }

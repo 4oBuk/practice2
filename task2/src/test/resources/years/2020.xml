@@ -1,0 +1,10 @@
+<fines>
+    <fine date_time= "2020-05-05 21:44:17" first_name="Boris" last_name="Brown" type="DRUNKDRIVING" fine_amount="10000" />
+    <fine date_time= "2020-03-08 22:03:30" first_name="Boris" last_name="Brown" type="DRUNKDRIVING" fine_amount="20000" />
+    <fine date_time= "2020-12-31 23:00:25" first_name="Boris" last_name="Brown" type="DRUNKDRIVING" fine_amount="30000" />
+    <fine date_time= "2020-05-05 15:39:03" first_name="Ivan" last_name="Ivanov" type="SPEEDING" fine_amount="340.0" />
+    <fine date_time= "2020-12-31 18:00:17" first_name="Fred" last_name="Alfred" type="SPEEDING" fine_amount="500.50" />
+    <fine date_time= "2020-10-10 10:10:10" first_name="Monica" last_name="Grey" type="PARKING" fine_amount="1000" />
+    <fine date_time= "2020-11-11 11:11:11" first_name="Lex" last_name="Skott" type="PARKING" fine_amount="1000" />
+    <fine date_time= "2020-01-01 01:01:01" first_name="Walter" last_name="White" type="PARKING" fine_amount="1000" />
+</fines>

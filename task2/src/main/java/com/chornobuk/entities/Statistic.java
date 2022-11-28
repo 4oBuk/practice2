@@ -1,12 +1,11 @@
 package com.chornobuk.entities;
 
 import java.math.BigDecimal;
-import java.time.Year;
 import java.util.Map;
 import java.util.Objects;
 
 public class Statistic {
-    private Year year;
+    private Integer year;
     private Map<FineType, BigDecimal> totalAmountPerType;
 
     public Map<FineType, BigDecimal> getTotalAmountPerType() {
@@ -20,15 +19,15 @@ public class Statistic {
     public Statistic() {
     }
 
-    public Year getYear() {
+    public int getYear() {
         return year;
     }
 
-    public void setYear(Year year) {
+    public void setYear(int year) {
         this.year = year;
     }
 
-    public Statistic(Year year, Map<FineType, BigDecimal> totalAmountPerType) {
+    public Statistic(int year, Map<FineType, BigDecimal> totalAmountPerType) {
         this.year = year;
         this.totalAmountPerType = totalAmountPerType;
     }

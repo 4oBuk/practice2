@@ -5,36 +5,22 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class XMLPersonsModifier {
     public void joinNamesAndSurnames(String inputFilePath, String outputFilePath) throws IOException {
         if (inputFilePath.equals(outputFilePath)) {
             throw new IllegalArgumentException("input and output pathes cannot be the same");
         }
-        try (BufferedReader reader = new BufferedReader(new FileReader(inputFilePath));
+        try (Scanner scanner = new Scanner(new FileReader(inputFilePath)).useDelimiter(">");
                 BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilePath))) {
-            String line;
-            StringBuilder stringBuilder = new StringBuilder();
-            while ((line = reader.readLine()) != null) {
-                if (line.contains("<persons>")) {
-                    writer.write(line);
-                    writer.write(System.getProperty("line.separator"));
-                } else if(line.contains("</persons>")) {
-                    writer.write(line);
-                } else if (line.contains("/>")) {
-                    stringBuilder.append(line);
-                    stringBuilder.append(System.getProperty("line.separator"));
-                    
-                    String xmlPerson = stringBuilder.toString();
-                    String result = XMLPersonModifier.joinNameAndSurname(xmlPerson);
-                    stringBuilder.setLength(0);// clear string builder after writing
-                    
-                    writer.write(result);
-                    writer.flush();
-                } else {
-                    stringBuilder.append(line);
-                    stringBuilder.append(System.getProperty("line.separator"));
+
+            while (scanner.hasNext()) {
+                String next = scanner.next() + ">";
+                if (!next.contains("<persons>") && !next.contains("</persons>")) {
+                    next = XMLPersonModifier.joinいtmeAndSurname(next);
                 }
+                writer.write(next);
             }
         } catch (IOException e) {
             e.printStackTrace();

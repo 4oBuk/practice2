@@ -9,7 +9,7 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.Test;
 
-public class PersonsXMLModiferTest {
+public class XMLPersonsModiferTest {
 
     @Test
     public void joinNamesAndSurnamesSamePathes() {
@@ -54,6 +54,17 @@ public class PersonsXMLModiferTest {
         assertTrue(compareFiles(correctFilePath, outputFilePath));
     }
 
+
+    @Test
+    public void joinNamesAndSurnamesOneLineInput() throws IOException{
+        String inputFilePath = "src/test/resources/case4/input.xml";
+        String outputFilePath = "src/test/resources/case4/output.xml";
+        String correctFilePath = "src/test/resources/case4/correct.xml";
+        // create new file with joined names and surnam
+        XMLPersonsModifier xmlModifer = new XMLPersonsModifier();
+        xmlModifer.joinNamesAndSurnames(inputFilePath, outputFilePath);
+        assertTrue(compareFiles(correctFilePath, outputFilePath));
+    }
 
     private boolean compareFiles(String f1Path, String f2Path) throws IOException{
         File f1 = new File(f1Path);

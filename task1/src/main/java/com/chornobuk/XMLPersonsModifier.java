@@ -18,7 +18,7 @@ public class XMLPersonsModifier {
             while (scanner.hasNext()) {
                 String next = scanner.next() + ">";
                 if (!next.contains("<persons>") && !next.contains("</persons>")) {
-                    next = XMLPersonModifier.joinいtmeAndSurname(next);
+                    next = XMLPersonModifier.joinNameAndSurname(next);
                 }
                 writer.write(next);
             }

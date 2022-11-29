@@ -60,7 +60,6 @@ public class XMLPersonsModiferTest {
         String inputFilePath = "src/test/resources/case4/input.xml";
         String outputFilePath = "src/test/resources/case4/output.xml";
         String correctFilePath = "src/test/resources/case4/correct.xml";
-        // create new file with joined names and surnam
         XMLPersonsModifier xmlModifer = new XMLPersonsModifier();
         xmlModifer.joinNamesAndSurnames(inputFilePath, outputFilePath);
         assertTrue(compareFiles(correctFilePath, outputFilePath));

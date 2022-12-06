@@ -1,10 +1,13 @@
+/home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/entities/Fine.java
+/home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/datagenerator/FinesXMLSerializer.java
+/home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/datagenerator/DataGenerator.java
+/home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/StatisticSerializer.java
+/home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/parsers/FinesXMLParser.java
+/home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/datagenerator/FinesGenerator.java
 /home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/entities/Statistic.java
 /home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/parsers/FineXMLParser.java
-/home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/entities/Fine.java
 /home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/entities/FineType.java
 /home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/StatisticFactory.java
 /home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/parsers/FinesFolderParser.java
 /home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/App.java
 /home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/StatisticManager.java
-/home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/StatisticSerializer.java
-/home/kostia/Documents/courses/practice2/task2/src/main/java/com/chornobuk/parsers/FinesXMLParser.java

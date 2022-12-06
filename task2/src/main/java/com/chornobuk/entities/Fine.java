@@ -5,21 +5,29 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+
 
 public class Fine {
-    
+    @JsonIgnore
     private LocalDateTime dateTime;
-    
+
+    @JacksonXmlProperty(isAttribute = true)
     @JsonProperty("first_name")
     private String firstName;
-    
+
+    @JacksonXmlProperty(isAttribute = true)
     @JsonProperty("last_name")
     private String lastName;
-    
+
+    @JacksonXmlProperty(isAttribute = true)
     @JsonProperty("type")
     private FineType type;
 
+    @JacksonXmlProperty(isAttribute = true)
     @JsonProperty("fine_amount")
     private BigDecimal fineAmount;
 
@@ -83,13 +91,23 @@ public class Fine {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Fine fine)) return false;
-        return dateTime.equals(fine.dateTime) && firstName.equals(fine.firstName) && lastName.equals(fine.lastName) && type == fine.type && fineAmount.equals(fine.fineAmount);
+        if (this == o)
+            return true;
+        if (!(o instanceof Fine fine))
+            return false;
+        return dateTime.equals(fine.dateTime) && firstName.equals(fine.firstName) && lastName.equals(fine.lastName)
+                && type == fine.type && fineAmount.equals(fine.fineAmount);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(dateTime, firstName, lastName, type, fineAmount);
+    }
+
+    @JacksonXmlProperty(isAttribute = true)
+    @JsonGetter(value = "date_time")
+    public String date_time() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return dateTime.format(formatter).toString();
     }
 }

@@ -4,17 +4,17 @@ import java.io.IOException;
 
 import com.chornobuk.datagenerator.DataGenerator;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
+        
+    }
+
+    public static void generateData(String path, int numberOfFiles, int amountPerFile) {
         DataGenerator dataGenerator = new DataGenerator();
         try {
-            dataGenerator.generateRandomFines("data", 11, 1000);
+            dataGenerator.generateRandomFines(path, numberOfFiles, amountPerFile);
         } catch (IOException e) {
             e.printStackTrace();
         }

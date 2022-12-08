@@ -1,11 +1,20 @@
 package com.chornobuk;
 
+import java.io.IOException;
+
 import org.junit.jupiter.api.Test;
+
+import com.chornobuk.datagenerator.DataGenerator;
 
 public class MultithreadStatisticManagerTest {
 
     {
-        App.generateData("data", 100, 10000);
+        DataGenerator dataGenerator = new DataGenerator();
+        try {
+            dataGenerator.generateRandomFines("data", 100, 10000);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Test

@@ -10,13 +10,4 @@ public class App
     {
         
     }
-
-    public static void generateData(String path, int numberOfFiles, int amountPerFile) {
-        DataGenerator dataGenerator = new DataGenerator();
-        try {
-            dataGenerator.generateRandomFines(path, numberOfFiles, amountPerFile);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }

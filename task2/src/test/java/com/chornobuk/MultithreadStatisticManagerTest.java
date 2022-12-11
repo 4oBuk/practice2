@@ -23,7 +23,7 @@ public class MultithreadStatisticManagerTest {
         String resultPath = "src/test/result.json";
         MultithreadStatisticManager statisticManager = new MultithreadStatisticManager();
 
-        for (int i = 2; i <= 8; i *= 2) {
+        for (int i = 1; i <= 8; i *= 2) {
             long startTime = System.currentTimeMillis();
             statisticManager.generateStatisticByData(dataPath, resultPath, i);
             long endTime = System.currentTimeMillis();
